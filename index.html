@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahodaree | Timeless Threads</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --sindoor: #B30000;
+    --off-white: #FAF9F6;
+}
+
+body {
+    margin: 0;
+    background-color: var(--off-white);
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+}
+
+.serif {
+    font-family: 'Bodoni Moda', serif;
+}
+
+/* Image Crops */
+.paisley-only {
+    width: 50px;
+    height: 55px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.paisley-only.small {
+    width: 30px;
+    height: 35px;
+    opacity: 0.85;
+}
+
+.brand-logo-main {
+    width: 140px;
+}
+
+@media (min-width: 1024px) {
+    .brand-logo-main {
+        width: 160px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- GRID WRAPPER -->
+<div class="grid lg:grid-cols-[60px_1fr_320px] min-h-screen">
+
+    <!-- Vertical Rule -->
+    <div class="hidden lg:flex items-center justify-center border-r border-red-900/10"
+         style="writing-mode: vertical-rl; letter-spacing: 0.5em; font-size: 9px; text-transform: uppercase; color: var(--sindoor); font-weight: 600;">
+        Two Sisters • Timeless Sarees • Everyday Elegance
+    </div>
+
+    <!-- MAIN PANEL -->
+    <div class="flex flex-col justify-between p-8 md:p-12 lg:p-20">
+
+        <div>
+            <img src="https://lh3.googleusercontent.com/d/1dVrc2bNSpCItO5sTvczpK317fyQvOqna"
+                 alt="Sahodaree"
+                 class="brand-logo-main">
+        </div>
+
+        <div class="max-w-xl mt-12">
+            <h2 class="serif text-3xl md:text-4xl lg:text-6xl italic leading-tight mb-6">
+                Born from a shared <br>
+                <span class="text-[var(--sindoor)]">wardrobe</span> and a thousand stories.
+            </h2>
+
+            <div class="space-y-6 text-base leading-relaxed text-gray-700 font-light">
+                <p>
+                    Sahodaree was founded by two sisters bound by a lifelong love for sarees.
+                </p>
+
+                <p class="serif italic text-xl md:text-2xl text-stone-500 border-l-2 border-[var(--sindoor)] pl-6 py-2">
+                    "A saree gathers stories with every drape."
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <a href="https://instagram.com/sahodaree_sarees"
+               target="_blank"
+               class="bg-[var(--sindoor)] text-white px-10 md:px-16 py-4 md:py-5 text-xs font-bold uppercase tracking-[0.25em] shadow-lg inline-block hover:opacity-90 transition-opacity">
+                View sarees
+            </a>
+        </div>
+
+    </div>
+
+    <!-- SIDEBAR PANEL -->
+    <div class="bg-white border-t lg:border-t-0 lg:border-l border-stone-200 flex flex-col justify-between p-8 lg:p-10">
+
+        <div>
+            <div class="flex items-center gap-3 mb-8">
+                <img src="https://lh3.googleusercontent.com/d/1dVrc2bNSpCItO5sTvczpK317fyQvOqna"
+                     class="paisley-only small"
+                     alt="Buta">
+                <h4 class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">
+                    The Collection
+                </h4>
+            </div>
+
+            <div class="serif italic text-lg text-gray-700">
+                <ul class="space-y-1">
+                    <li>Bengal Cotton</li>
+                    <li>Jamdhani</li>
+                    <li>Maheshwari</li>
+                    <li>Chanderi</li>
+                    <li>Linen</li>
+                    <li>Tussar</li>
+                    <li>Kantha</li>
+                    <li>Kalamkari</li>
+                    <li>Paithani</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pt-8 border-t border-stone-100 mt-12">
+            <img src="https://lh3.googleusercontent.com/d/1dVrc2bNSpCItO5sTvczpK317fyQvOqna"
+                 class="paisley-only mb-4"
+                 alt="Buta">
+
+            <p class="text-[10px] leading-relaxed text-gray-500 italic">
+                Sahodaree — from the Sanskrit word for sisters; a collection shaped by two sisters and our love for sarees.
+            </p>
+
+            <p class="text-[8px] uppercase tracking-widest text-gray-300 mt-4">
+                Sahodaree 2026
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
